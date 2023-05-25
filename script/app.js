@@ -24,12 +24,11 @@ $(document).ready(function() {
 
     //사업분야 버튼 클릭 클래스on.off
     $('.biz_nav li').click(function() {
-      $('.biz_nav li').click(function() {
       var nav_btn = $(this).index();
       $('.biz_img a').eq(nav_btn).show().siblings().hide();
       $(this).addClass('on').siblings().removeClass('on');
       });
-    });
+    
 
     //글로벌 진출 현황 국가별 클릭, 호출
     $('.nation_selection li').click(function() {
