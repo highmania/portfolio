@@ -9,6 +9,9 @@ $(document).ready(function() {
       });
     });
 
+    // Mobile nav 토글
+    
+
     //메인 슬라이드
     $('.slide').slick({
       slide: '.slideimg',
@@ -18,10 +21,11 @@ $(document).ready(function() {
       dots: true,
       infinite: true,
       autoplay : true,
-      autospeed: 300,
+      autoplaySpeed: 5000,
       pauseOnHover : true,
     });
-
+    
+    
     //사업분야 버튼 클릭 클래스on.off
     $('.biz_nav li').click(function() {
       var nav_btn = $(this).index();
@@ -38,15 +42,16 @@ $(document).ready(function() {
 
     //대표제품 슬라이드
     $('.products_slide').slick({
-      slide: '.product',
+      slide: 'li',
       slidesToShow : 1,
       slidesToScroll : 1,
       dots: true,
       arrows: true,
-      prevArrow : "<button type='button' class='slick-prev'>Previous</button>",
-      nextArrow : "<button type='button' class='slick-next'>Next</button>",
+      infinite: true,
+      autoplay : true,
+      autoplaySpeed: 10000,
     });
- 
+    
     //보도자료/소식 슬라이드
     $('.news_slide').slick({
       slide: 'li',
