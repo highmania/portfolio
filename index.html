@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <title>Orion</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/slick/slick.css">
     <link rel="stylesheet" href="./css/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="./script/jquery-3.6.4.min.js"></script>
     <script src="./script/slick.min.js"></script>
     <script src="./script/app.js"></script>
+    
 </head>
 
 <body>
     <!-- header -->
     <header>
-        <h1 class="logo"><a href="#"><img src="./images/Logo.png" alt="오리온"></a></h1>
+        <a href="#" class="logo"><img src="./images/Logo.png" alt="ORION_red"></a>
         <div class="submenu_bg"></div>
         <nav>
             <h2 class="hidden">오리온 메인메뉴</h2>
@@ -73,6 +75,8 @@
                 </li>
             </ul>
         </nav>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide bi bi-x"></i>
     </header>
     <!-- //header -->
     <!-- main -->
@@ -83,30 +87,38 @@
             <div class="container">
                 <div class="slide">
                     <div class="slideimg">
-                        <a href="#"><img src="./images/slide1.png" alt="베이킹">
-                            <p class="slide_text1">맛있고 품질 좋은 제품을<br>
+                        <a href="#"><img src="./images/slide1.jpg" alt="베이킹">
+                            <div class="slide_text1">
+                                <p>맛있고 품질 좋은 제품을<br>
                                 합리적인 가격으로 공급합니다.</p>
+                            </div>
                         </a>
                     </div>
                     <div class="slideimg">
-                        <a href="#"><img src="./images/slide2.png" alt="제주폭포">
-                            <p class="slide_text2"> 닥터유는 현대인의 식습관을 고려한 <br>
-                                맞춤 영양 설계 브랜드로 <br>
+                        <a href="#"><img src="./images/slide2.jpg" alt="제주폭포">
+                            <div class="slide_text2">
+                                <p> 닥터유는 현대인의 식습관을 고려한<br>
+                                맞춤 영양 설계 브랜드로<br>
                                 맛있는 건강을 추구합니다.</p>
+                            </div>
                         </a>
                     </div>
                     <div class="slideimg">
-                        <a href="#"><img src="./images/slide3.png" alt="자연원물농장">
-                            <p class="slide_text3">마켓오네이처는 자연원물 그대로의 <br>
-                                정직하고 건강한 맛을 담은 <br>
+                        <a href="#"><img src="./images/slide3.jpg" alt="자연원물농장">
+                            <div class="slide_text3">
+                                <p>마켓오네이처는 자연원물 그대로의<br>
+                                정직하고 건강한 맛을 담은<br>
                                 오리온의 간편식사대용식 브랜드입니다.</p>
+                            </div>
                         </a>
                     </div>
                     <div class="slideimg">
-                        <a href="#"><img src="./images/slide4.png" alt="바이오연구실">
-                            <p class="slide_text4">진단키트 사업을 시작으로 <br>
-                                백신, 신약 발굴 및 개발까지 <br>
-                                제약/바이오 플랫폼 기업을 추구합니다.</p>
+                        <a href="#"><img src="./images/slide4.jpg" alt="바이오연구실">
+                            <div class="slide_text4">
+                            <p>진단키트 사업을 시작으로<br>
+                            백신, 신약 발굴 및 개발까지<br>
+                            제약/바이오 플랫폼 기업을 추구합니다.</p>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -127,7 +139,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
         <!-- //메인슬라이드 -->
         <!-- 사업분야소개 -->
@@ -179,29 +191,29 @@
                         <img src="./images/spot.png" alt="spot" class="redspot">
                         <div class="spotWrap">
                             <img src="./images/overseas_img2.png" alt="베트남가정">
-                        <p class="spot_text">1995년 베트남 진출<br>
-                            2021년 연매출 <span>3</span>천억 원을 돌파<br>
-                            누적 매출액 <span>2</span>조 원 달성
-                        </p>
+                            <p class="spot_text">1995년 베트남 진출<br>
+                                2021년 연매출 <span>3</span>천억 원을 돌파<br>
+                                누적 매출액 <span>2</span>조 원 달성
+                            </p>
                         </div>
                     </li>
                     <li class="spot">
                         <img src="./images/spot.png" alt="spot" class="redspot">
                         <div class="spotWrap">
                             <img src="./images/overseas_img3.png" alt="러시아현지마트">
-                        <p class="spot_text">2003년 러시아 법인 설립<br>
-                            2021년 연 매출 <span>1</span>천억원 돌파
-                        </p>
+                            <p class="spot_text">2003년 러시아 법인 설립<br>
+                                2021년 연 매출 <span>1</span>천억원 돌파
+                            </p>
                         </div>
                     </li>
                     <li class="spot">
                         <img src="./images/spot.png" alt="spot" class="redspot">
                         <div class="spotWrap">
                             <img src="./images/overseas_img4.png" alt="인도현지생산공장">
-                        <p class="spot_text">2021년 현지 제조업체<br>
-                            만 벤처스(Mann Ventures)와 합작.<br>
-                            ‘라자스탄’(Rajasthan)주에 생산 공장 완공
-                        </p>
+                            <p class="spot_text">2021년 현지 제조업체<br>
+                                만 벤처스(Mann Ventures)와 합작.<br>
+                                ‘라자스탄’(Rajasthan)주에 생산 공장 완공
+                            </p>
                         </div>
                     </li>
                 </ul>
@@ -213,7 +225,7 @@
         <section id="section_products">
             <h2>한국을 넘어 세계를 사로잡은 <span>오리온</span> 제품들</h2>
             <ul class="products_slide">
-                <li class="product">
+                <li class="item">
                     <a href="#"><img src="./images/product1.png" alt="초코파이"></a>
                     <div class="p_text">
                         <p>오리온 초코파이는 情입니다<br>
@@ -227,7 +239,7 @@
                         <button type="button" class="detail">자세히보기</button>
                     </div>
                 </li>
-                <li class="product">
+                <li class="item">
                     <a href="#"><img src="./images/product2.png" alt="꼬북칩"></a>
                     <div class="p_text">
                         <p>국내최초 4겹 층층구조!<br>
@@ -241,7 +253,7 @@
                         <button type="button" class="detail">자세히보기</button>
                     </div>
                 </li>
-                <li class="product">
+                <li class="item">
                     <a href="#"><img src="./images/product3.png" alt="제주용암수"></a>
                     <div class="p_text">
                         <p>Dr. You 제주용암수<br>
@@ -255,7 +267,7 @@
                         <button type="button" class="detail">자세히보기</button>
                     </div>
                 </li>
-                <li class="product">
+                <li class="item">
                     <a href="#"><img src="./images/product4.png" alt="마켓오_브라우니"></a>
                     <div class="p_text">
                         <p>갓 구워낸 듯 <br>
@@ -269,7 +281,7 @@
                         <button type="button" class="detail">자세히보기</button>
                     </div>
                 </li>
-                <li class="product">
+                <li class="item">
                     <a href="#"><img src="./images/product5.png" alt="닥터유_에너지바"></a>
                     <div class="p_text">
                         <p>Dr. You 에너지바<br>
@@ -283,7 +295,7 @@
                         <button type="button" class="detail">자세히보기</button>
                     </div>
                 </li>
-                <li class="product">
+                <li class="item">
                     <a href="#"><img src="./images/product6.png" alt="오!그래놀라시리즈"></a>
                     <div class="p_text">
                         <p>건강한 5가지 통곡물을 그래놀라로<br>
@@ -307,7 +319,7 @@
             <div class="red_box"></div>
             <ul class="news_slide">
                 <li class="newsbox">
-                    <a href="#"><img src="./images/news1.png" alt="마이구미 아이셔 한정판"></a>
+                    <a href="#"><img src="./images/news1.png" alt="마이구미 아이셔 한정판 기사"></a>
                     <div class="news_textbox">
                         <p class="news_type">보도자료</p>
                         <p class="news_title">오리온, 화이트데이 시즌 한정판<br>
@@ -316,7 +328,7 @@
                     </div>
                 </li>
                 <li class="newsbox">
-                    <a href="#"><img src="./images/news2.png" alt="꼬북칩 크런치즈X와인"></a>
+                    <a href="#"><img src="./images/news2.png" alt="꼬북칩 크런치즈X와인 댓글 이벤트"></a>
                     <div class="news_textbox">
                         <p class="news_type">인스타그램</p>
                         <p class="news_title">오리온, 꼬북칩 크런치즈x와인 조합 <br>
@@ -325,7 +337,7 @@
                     </div>
                 </li>
                 <li class="newsbox">
-                    <a href="#"><img src="./images/news3.png" alt="포카칩"></a>
+                    <a href="#"><img src="./images/news3.png" alt="포카칩 생산공장 유튜브"></a>
                     <div class="news_textbox">
                         <p class="news_type">유튜브</p>
                         <p class="news_title">오리온 공식썰 오!피셜 Ep.02 포카칩<br>
@@ -334,7 +346,7 @@
                     </div>
                 </li>
                 <li class="newsbox">
-                    <a href="#"><img src="./images/news4.png" alt="마켓오브라우니 리뉴얼이벤트배너"></a>
+                    <a href="#"><img src="./images/news4.png" alt="마켓오브라우니 리뉴얼이벤트"></a>
                     <div class="news_textbox">
                         <p class="news_type">인스타그램</p>
                         <p class="news_title">#이달의_마켓오 쫀득~꾸덕🍫<br>
@@ -342,7 +354,7 @@
                         <p class="news_date">2023.03.10</p>
                     </div>
                 <li class="newsbox">
-                    <a href="#"><img src="./images/news5.png" alt="초코파이봄꾸미기 이벤트배너"></a>
+                    <a href="#"><img src="./images/news5.png" alt="초코파이봄꾸미기 이벤트"></a>
                     <div class="news_textbox">
                         <p class="news_type">인스타그램</p>
                         <p class="news_title">초코파이에 나만의 봄을 담은<br>
@@ -362,37 +374,47 @@
                 <li>
                     <img src="./images/csr1.png" alt="윤리경영_고객img">
                     <div class="CSR_text">
-                        <a href="#"><h3>고객</h3>
-                        <p>고객 만족을 추구합니다</p></a>
+                        <a href="#">
+                            <h3>고객</h3>
+                            <p>고객 만족을 추구합니다</p>
+                        </a>
                     </div>
-                    
+
                 </li>
                 <li>
                     <img src="./images/csr2.png" alt="윤리경영_협력회사img">
                     <div class="CSR_text">
-                        <a href="#"><h3>협력회사</h3>
-                        <p>협력회사와 동반성장을 실현합니다</p></a>
+                        <a href="#">
+                            <h3>협력회사</h3>
+                            <p>협력회사와 동반성장을 실현합니다</p>
+                        </a>
                     </div>
                 </li>
                 <li>
                     <img src="./images/csr3.png" alt="윤리경영_임직원img">
                     <div class="CSR_text">
-                        <a href="#"><h3>임직원</h3>
-                        <p>임직원의 행복과 발전을 중시합니다</p></a>
+                        <a href="#">
+                            <h3>임직원</h3>
+                            <p>임직원의 행복과 발전을 중시합니다</p>
+                        </a>
                     </div>
                 </li>
                 <li>
                     <img src="./images/csr4.png" alt="윤리경영_주주img">
                     <div class="CSR_text">
-                        <a href="#"><h3>주주</h3>
-                        <p>주주가치를 증대합니다</p></a>
+                        <a href="#">
+                            <h3>주주</h3>
+                            <p>주주가치를 증대합니다</p>
+                        </a>
                     </div>
                 </li>
                 <li>
                     <img src="./images/csr5.png" alt="윤리경영_사회img">
                     <div class="CSR_text">
-                        <a href="#"><h3>사회</h3>
-                        <p>사회에 대한 책임을 다합니다</p></a>
+                        <a href="#">
+                            <h3>사회</h3>
+                            <p>사회에 대한 책임을 다합니다</p>
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -403,7 +425,7 @@
     <!-- footer -->
     <footer>
         <div class="footer_left">
-            <a href="#"><img src="./images/flogo.png" alt="오리온"></a>
+            <a href="#"><img src="./images/flogo.png" alt="ORION_red"></a>
             <ul>
                 <li><a href="#">법적고지 </a></li>
                 <li><a href="#">개인정보처리방침 </a></li>
@@ -427,9 +449,9 @@
                     (주말 및 공휴일 휴무)
                 </p>
                 <div class="footer_sns">
-                    <a href="#"><img src="./images/icon_youtube.png" alt="유튜브바로가기"></a>
-                    <a href="#"><img src="./images/icon_instagram.png" alt="인스타그램바로가기"></a>
-                    <a href="#"><img src="./images/icon_facebook.png" alt="페이스북바로가기"></a>
+                    <a href="#"><img src="./images/icon_youtube.png" alt="유튜브바로가기icon"></a>
+                    <a href="#"><img src="./images/icon_instagram.png" alt="인스타그램바로가기icon"></a>
+                    <a href="#"><img src="./images/icon_facebook.png" alt="페이스북바로가기icon"></a>
                 </div>
             </div>
             <div class="footerbox">
