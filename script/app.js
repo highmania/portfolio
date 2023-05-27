@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     //대표제품 슬라이드
     $('.products_slide').slick({
-      slide: 'li',
+      slide: '.product',
       slidesToShow : 1,
       slidesToScroll : 1,
       dots: true,
@@ -46,24 +46,6 @@ $(document).ready(function() {
       prevArrow : "<button type='button' class='slick-prev'>Previous</button>",
       nextArrow : "<button type='button' class='slick-next'>Next</button>",
     });
-    
-    //대표제품 슬라이드 버튼 클릭마다 bg바꾸기 
-    let num = 0;
-    $(".slick-next").on('click', function() {
-      num++;
-      if(num > 5) {num = 0;}
-      $("#section_products .products_slide").css({
-        backgroundImage: 'url(images/shape'+ num +'.png)'
-      })
-    })
-    
-    $(".slick-prev").on('click', function() {
-      num--;
-      if(num < 0) {num = 5;}
-      $("#section_products .products_slide").css({
-        backgroundImage: 'url(images/shape'+ num +'.png)'
-      })
-    })
  
     //보도자료/소식 슬라이드
     $('.news_slide').slick({
