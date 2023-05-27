@@ -74,17 +74,19 @@ $(document).ready(function() {
       infinite: true,
       autoplay : true,
       autospeed: 1000,
-      // responsive:[
-      //   {
-      //     breakpoint : 1200,
-      //     setting:{
-      //       slidesToShow : 2,
-      //     }
-      //     breakpoint : 1200,
-      //     setting:{
-      //       slidesToShow : 2,
-      //     }
-      //   }
-      // ]
+      responsive: [
+        {
+          breakpoint: 1200, 
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 768, 
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
   });
