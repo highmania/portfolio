@@ -175,11 +175,12 @@ main{
 }
 #mainslide .container{
     width: 100%;
+    overflow: hidden;
 }
 
 #mainslide .container .slide{
     width: 100%;
-    height: auto;
+    height: 800px;
     display: flex;
     position: relative;
 }
@@ -199,7 +200,10 @@ main{
 }
 #mainslide .slide .slick-dots{
     position: absolute;
-    bottom: 10%;
+    top: 25%;
+    left: 5%;
+    display: flex;
+    flex-direction: column; 
 }
 
 #mainslide .slide .slick-dots li,
@@ -225,12 +229,12 @@ main{
 #mainslide .slide .slide_text3,
 #mainslide .slide .slide_text4{
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    font-size: 2.5vw;
-    line-height: 4vw;
+    font-size: 50px;
+    line-height: 70px;
     font-weight: 500;
     text-align: center;
     z-index: 1;
@@ -273,6 +277,9 @@ main{
 }
 
 @media (max-width:1400px){
+    #mainslide .container .slide{
+        height: 500px;
+    }
     #mainslide .slide .slide_text1, 
     #mainslide .slide .slide_text2,
     #mainslide .slide .slide_text3,
@@ -281,21 +288,43 @@ main{
     }
 }
 @media (max-width:993px){
+    #mainslide .container .slide{
+        height: 530px;
+    }
     #mainslide .slide .slide_text1, 
     #mainslide .slide .slide_text2,
     #mainslide .slide .slide_text3,
     #mainslide .slide .slide_text4{
+        top: 50%;
         font-size: 25px;
         line-height: 35px;
     }
+
+    #mainslide .slide .slick-dots li,
+    #mainslide .slide .slick-dots li button,
+    #mainslide .slide .slick-dots li button:before{
+    width: 35px;
+    height: 35px;
+    }
+    #mainslide .slide .slick-dots li button:before{
+    font-size: 35px;
+    line-height: 35px; 
+    }
 }
 @media (max-width:768px){
+    #mainslide .container .slide{
+        height: 295px;
+    }
     #mainslide .slide .slide_text1, 
     #mainslide .slide .slide_text2,
     #mainslide .slide .slide_text3,
     #mainslide .slide .slide_text4{
-        font-size: 16px;
+        font-size: 15px;
         line-height: 28px;
+    }
+    #mainslide .slide .slick-dots{
+        top: 5%;
+        left: 3%;
     }
     #mainslide .slide .slick-dots li,
     #mainslide .slide .slick-dots li button,
@@ -310,9 +339,12 @@ main{
 }
 /* 주가정보/IR정보 */
 #info_box{
+    position: absolute;
+    left : 50%;
+    bottom : 0;
+    transform: translate( -50%, 0%);
     width: 70%;
     height: 80px;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,14 +354,14 @@ main{
     min-width: 500px;
     height: 70px;
     padding: 5px;
-    background-color: #e50110aa;
+    background-color: #e50110;
 }
 #info_box .IRinfo{
     width: 50%;
     min-width: 500px;
     height: 70px;
     padding: 5px;
-    background-color: #DBB77Daa;
+    background-color: #DBB77D;
 }
 #info_box .stock ul{
     width: 80%;
@@ -390,20 +422,33 @@ main{
         width: 100%;
         flex-direction: column;
     }
+    #info_box .stock,
+    #info_box .IRinfo{
+        height: 50px;
+    }
+    #info_box .stock ul,
+    #info_box .IRinfo ul{
+        width: 70%;
+    }
     #info_box .stock ul>li:nth-child(1){
         font-size: 18px;
+        line-height: 50px;
     }
     #info_box .stock ul>li:nth-child(2){
         font-size: 26px;
+        line-height: 50px;
     }
     #info_box .stock ul>li:nth-child(3){
         font-size: 14px;
+        line-height: 25px;
     }
     #info_box .IRinfo ul>li:nth-child(1){
         font-size: 18px;
+        line-height: 50px;
     }
     #info_box .IRinfo ul>li:nth-child(2){
         font-size: 23px;
+        line-height: 50px;
     }
 }
 /* 사업분야소개 */
@@ -411,7 +456,7 @@ main{
     width: 100%;
     overflow: hidden;
     margin: auto; 
-    margin-top: 130px;
+    margin-top: 100px;
 }
 #section_biz h2{
     font-size: 2.5vw;
@@ -709,12 +754,12 @@ main{
     width: 100%;
     overflow: hidden;
     margin: auto;
+    margin-top: 100px;
 }
 
 #section_products h2{
     font-size: 2.5vw;
     font-weight: 500;
-    margin-top: 130px;
     text-align: center;
 }
 #section_products h2 span{
@@ -855,11 +900,11 @@ main{
     height: 835px; 
     margin: auto;
     position: relative;
+    margin-top: 100px;
 }
 #section_news h2{
     font-size: 2.5vw;
     font-weight: 500;
-    margin-top: 130px;
     text-align: center;
 }
 #section_news h2 span{
@@ -897,8 +942,8 @@ main{
     justify-content: space-between;    
 }
 #section_news .news_slide .newsbox img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: auto;
     margin-top: 20px;
     border-radius: 5%;
@@ -972,10 +1017,16 @@ main{
     
 }
 /* 윤리경영 */
+#CSR{
+    width: 100%;
+    height: 800px; 
+    margin: auto;
+    position: relative;
+    margin-top: 100px;
+}
 #CSR h2{
     font-size: 2.5vw;
     font-weight: 500;
-    margin-top: 80px;
     text-align: center;
 }
 #CSR h2 span{
@@ -1086,6 +1137,9 @@ main{
 }
 
 @media (max-width: 1023px){
+    #CSR{
+        height: 600px; 
+    }
     #CSR h2{
         font-size: 20px;
     }
@@ -1143,7 +1197,7 @@ footer {
     width: 100%;
     height: 300px;
     background-color: #222;
-    margin-top: 150px;
+    margin-top: 50px;
     display: flex;
 }
 footer .footer_left {
@@ -1212,13 +1266,13 @@ footer .footer_right .footer_sns{
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        height: 550px;
+        height: 500px;
         margin-top: 80px;
     }
     footer .footer_left{
         margin: 0;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     footer .footer_left a{
         display: inline-block;
@@ -1234,11 +1288,16 @@ footer .footer_right .footer_sns{
     }
 }
 @media (max-width:768px){
-    footer .footer_left{
+    footer .footer_left,
+    footer .footer_left ul{ 
+        width: 370px;
         margin: 0;
     }
+    footer .footer_left ul:nth-child(3){
+        display: none;
+    }
     footer .footer_left img{
-        height: 70px;
+        height: 100px;
     }
     footer .footer_left ul{
         margin-bottom: 10px;
@@ -1246,13 +1305,16 @@ footer .footer_right .footer_sns{
 
     footer .footer_left ul li,
     footer .footer_left p {
-        font-size: 2.2vw;
+        font-size: 12px;
+    }
+    footer .footer_right {
+        width: 370px;
     }
     footer .footer_right p{
-        font-size: 3vw;
+        font-size: 14px;
     }
-    footer .footer_right span{
-        font-size: 2.5vw;
+    footer .footer_right .footerbox span{
+        font-size: 20px;
     }
 }
 /* //footer */
