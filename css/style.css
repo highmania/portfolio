@@ -18,9 +18,10 @@ a {
 img {
     display: block;
 }
-
+html{
+    font-size: 10px;
+}
 body {
-    font-size: 16px;
     position: relative;
     font-family: 'Noto sans KR', sans-serif;
 }
@@ -78,7 +79,7 @@ nav .mainmenu>li:last-child{
 nav .mainmenu>li>a{
     display: block;
     justify-content: center;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     color: #222;
 }
@@ -98,7 +99,7 @@ nav .submenu>li {
 
 nav .submenu>li>a {
     display: block;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: #222;
 }
@@ -139,7 +140,7 @@ nav .submenu>li>a:hover {
     .mobile-nav-show {
       display: block;
       color: #222;
-      font-size: 40px;
+      font-size: 4rem;
       cursor: pointer;
       line-height: 70px;
       transition: 0.5s;
@@ -149,7 +150,7 @@ nav .submenu>li>a:hover {
   
     .mobile-nav-hide {
       color: #222;
-      font-size: 32px;
+      font-size: 3.2rem;
       cursor: pointer;
       line-height: 0;
       transition: 0.5s;
@@ -215,7 +216,7 @@ main{
 }
 
 #mainslide .slide .slick-dots li button:before{
-    font-size: 60px;
+    font-size: 6rem;
     line-height: 60px;
     opacity: 1;
     color: #fff;
@@ -233,7 +234,7 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    font-size: 50px;
+    font-size: 5rem;
     line-height: 70px;
     font-weight: 500;
     text-align: center;
@@ -244,7 +245,7 @@ main{
 
 #mainslide .slide .slick-prev,
 #mainslide .slide .slick-next {
-    font-size: 30px;
+    font-size: 3rem;
     position: absolute;
     z-index: 2;
     top: 50%;
@@ -284,7 +285,7 @@ main{
     #mainslide .slide .slide_text2,
     #mainslide .slide .slide_text3,
     #mainslide .slide .slide_text4{
-        font-size: 35px;
+        font-size: 3.5rem;
     }
 }
 @media (max-width:993px){
@@ -296,7 +297,7 @@ main{
     #mainslide .slide .slide_text3,
     #mainslide .slide .slide_text4{
         top: 50%;
-        font-size: 25px;
+        font-size: 2.5rem;
         line-height: 35px;
     }
 
@@ -307,7 +308,7 @@ main{
     height: 35px;
     }
     #mainslide .slide .slick-dots li button:before{
-    font-size: 35px;
+    font-size: 3.5rem;
     line-height: 35px; 
     }
 }
@@ -319,7 +320,7 @@ main{
     #mainslide .slide .slide_text2,
     #mainslide .slide .slide_text3,
     #mainslide .slide .slide_text4{
-        font-size: 15px;
+        font-size: 1.5rem;
         line-height: 28px;
     }
     #mainslide .slide .slick-dots{
@@ -333,7 +334,7 @@ main{
     height: 30px;
     }
     #mainslide .slide .slick-dots li button:before{
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 30px; 
     }
 }
@@ -372,21 +373,21 @@ main{
 
 #info_box .stock ul>li:nth-child(1){
     width: 33%;
-    font-size: 25px;
+    font-size: 2.5rem;
     line-height: 70px;
     font-weight: 500;
     text-align: center;
 }
 #info_box .stock ul>li:nth-child(2){
     width: 33%;
-    font-size: 35px;
+    font-size: 3.5rem;
     line-height: 70px;
     font-weight: 500;
     text-align: center;
 }
 #info_box .stock ul>li:nth-child(3){
     width: 33%;
-    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 35px;
     font-weight: 500;
     text-align: center;
@@ -401,14 +402,14 @@ main{
 
 #info_box .IRinfo ul>li:nth-child(1){
     width: 40%;
-    font-size: 25px;
+    font-size: 2.5rem;
     line-height: 70px;
     font-weight: 500;
     text-align: center;
 }
 #info_box .IRinfo ul>li:nth-child(2){
     width: 60%;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 70px;
     font-weight: 500;
     text-align: center;
@@ -431,23 +432,23 @@ main{
         width: 70%;
     }
     #info_box .stock ul>li:nth-child(1){
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: 50px;
     }
     #info_box .stock ul>li:nth-child(2){
-        font-size: 26px;
+        font-size: 2.6rem;
         line-height: 50px;
     }
     #info_box .stock ul>li:nth-child(3){
-        font-size: 14px;
+        font-size: 1.4rem;
         line-height: 25px;
     }
     #info_box .IRinfo ul>li:nth-child(1){
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: 50px;
     }
     #info_box .IRinfo ul>li:nth-child(2){
-        font-size: 23px;
+        font-size: 2.3rem;
         line-height: 50px;
     }
 }
@@ -459,7 +460,7 @@ main{
     margin-top: 100px;
 }
 #section_biz h2{
-    font-size: 2.5vw;
+    font-size: 4.5rem;
     font-weight: 500;
     text-align: center;
 }
@@ -484,7 +485,7 @@ main{
     margin-left: 3%;
     color: #808080;
     border-radius: 20px;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 40px;
 }
 
@@ -522,20 +523,20 @@ main{
 
 @media (max-width:1200px){
     #section_biz h2{
-        font-size: 35px;
+        font-size: 3.5rem;
     }
     #section_biz .biz_nav{
         width: 60%;
         margin-top: 40px;
     }
     #section_biz .biz_nav>li{
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     
 }
 @media (max-width:993px){
     #section_biz h2{
-        font-size: 20px;
+        font-size: 2rem;
     }
     #section_biz .biz_img{
         height: 450px;
@@ -545,7 +546,7 @@ main{
         
     }
     #section_biz .biz_nav>li{
-        font-size: 10px;
+        font-size: 1rem;
         height: 25px;
         line-height: 25px;
     }
@@ -558,7 +559,7 @@ main{
 }
 /* 글로벌 진출현황 */
 .global_h2{
-    font-size: 45px;
+    font-size: 4.5rem;
     font-weight: 500;
     text-align: center;
     margin-top: 100px;
@@ -581,13 +582,13 @@ main{
     margin: 40px auto;
 }
 #section_global .global_text>p{
-    font-size: 23px;
+    font-size: 2.3rem;
     font-weight: 500;
     text-align: center;
 }
 
 #section_global .global_text span{
-    font-size: 40px;
+    font-size: 4rem;
     color :#E50112;
 }
 
@@ -635,7 +636,7 @@ main{
     z-index: 1;
 }
 #section_global .global_map .nation_selection>li{
-    font-size: 20px;
+    font-size: 2rem;
     color : #555;
     font-weight: 700;
     margin-left: 20%;
@@ -698,34 +699,34 @@ main{
     margin-top: 10px;
     width: 100%;
     height: 139px; 
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 30px;
     font-weight: 500;
 }
 #section_global .global_map .nations_spot .spot .spotWrap .spot_text span{
-    font-size: 30px;
+    font-size: 3rem;
     color: #E50112;
 }
 @media (max-width:1200px){
     .global_h2{
-        font-size: 35px;
+        font-size: 3.5rem;
     }
 }
 @media (max-width:993px){
     .global_h2{
-        font-size: 25px;
+        font-size: 2.5rem;
     }
     #section_global{
         height: 600px;
     }
     #section_global .global_text>p{
-        font-size: 18px;
+        font-size: 1.8rem;
     }
     #section_global .global_text span{
-        font-size: 30px;
+        font-size: 3rem;
     }
     #section_global .global_map .nation_selection>li{
-        font-size: 15px;
+        font-size: 1.5rem;
     }
 
     #section_global .global_map{
@@ -743,10 +744,10 @@ main{
         left: 30%;
     }
     #section_global .global_map .nations_spot .spot .spotWrap .spot_text{
-        font-size: 13px;
+        font-size: 1.2rem;
     }
     #section_global .global_map .nations_spot .spot .spotWrap .spot_text span{
-        font-size: 17px;
+        font-size: 1.6rem;
     }
 }
 /* 대표제품 소개 */
@@ -758,7 +759,7 @@ main{
 }
 
 #section_products h2{
-    font-size: 2.5vw;
+    font-size: 4.5rem;
     font-weight: 500;
     text-align: center;
 }
@@ -772,6 +773,7 @@ main{
     margin: auto;
     margin-top: 50px;
     background: url(../images/shape0.png) no-repeat center;
+    position: relative;
 }
 
 #section_products .products_slide .item{
@@ -788,35 +790,39 @@ main{
     padding: 80px 120px;
 }
 
-#section_products .products_slide .p_text{
+#section_products .products_slide .item .p_text{
     width: 350px;
     height: 300px;
     padding: 30px;
 }
-#section_products .products_slide .p_text p{
-    font-size: 1.5rem;
-    line-height: 2rem;
+#section_products .products_slide .item .p_text p{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
 }
-#section_products .products_slide .p_text button{
+#section_products .products_slide .item .p_text .detail{
     width: 140px;
-    height: 34px;
-    border: 0.5px solid #E50112;
-    background-color: #E50112;
+    height: 40px;
+    border: 2px solid #e5e5e5;
+    background-color:  #fff;
     text-align: center;
-    color: #fff;
-    text-shadow: 2px 2px 7px #666;
+    color: #808080;
     border-radius: 20px;
-    font-size: 1.125rem;
-    line-height: 34px;
+    font-size: 1.8rem;
+    line-height: 40px;
     font-weight: 600;
 }
-#section_products .products_slide .p_text button:hover{
+#section_products .products_slide .item .p_text .detail:hover{
+    border: 2px solid #E50112;
+    background-color: #E50112;
+    color: #fff; 
+    text-shadow: 2px 2px 7px #666;
     cursor : pointer;
+    transition: all 0.3s;
 }
 
 #section_products .products_slide .slick-dots{
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
 }
 
 #section_products .products_slide .slick-dots li{
@@ -830,8 +836,8 @@ main{
 }
 
 #section_products .products_slide .slick-dots li button:before{
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 6rem;
+    line-height: 6rem;
     width: 60px;
     height: 60px;
     opacity: 1;
@@ -844,19 +850,19 @@ main{
 
 #section_products .products_slide .slick-prev,
 #section_products .products_slide .slick-next {
+    position: absolute;
+    top : 96%;
     font-size: 0px;
     width: 45px;  
     height: 45px;
-    position: absolute;
-    z-index: 1;
-    top : 96%;
     cursor: pointer;
     border: 2px solid #e5e5e5;
     border-radius: 100%;
+    z-index: 1;
 }
  
 #section_products .products_slide .slick-prev {
-    left: 30%;
+    left: 35%;
 }
  
 #section_products .products_slide .slick-prev:after {
@@ -869,7 +875,7 @@ main{
 }
  
 #section_products .products_slide .slick-next {
-    left: 70%;
+    left: 63%;
 }
  
 #section_products .products_slide .slick-next:after {
@@ -882,17 +888,63 @@ main{
 }
 @media (max-width:1400px){
     #section_products h2{
-        font-size: 35px;
+        font-size: 3.5rem;
     }
 }
 @media (max-width:993px){
     #section_products h2{
-        font-size: 20px;
+        font-size: 2rem;
+    }
+    #section_products .products_slide{
+        height: 550px;
+        background: url(../images/shape1.png) no-repeat center;
     }
     #section_products .products_slide .item{
         flex-direction: column;
     }
+    #section_products .products_slide .item img{
+        width: 65%;
+        padding: 0px;
+        margin: auto;
+    }
+    #section_products .products_slide .item .p_text{
+        text-align: center;
+    }
+    #section_products .products_slide .item .p_text p{
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    #section_products .products_slide .item .p_text .detail{
+        width: 10rem;
+        height: 2.6rem;
+        border: 2px solid #e5e5e5;
+        background-color:  #fff;
+        text-align: center;
+        color: #808080;
+        border-radius: 20px;
+        font-size: 1.3rem;
+        line-height: 2.6rem;
+        font-weight: 600;
+    }
 
+    #section_products .products_slide .slick-dots li,
+    #section_products .products_slide .slick-dots li button,
+    #section_products .products_slide .slick-dots li button:before{
+        width: 30px;
+        height: 30px;
+    }
+    #section_products .products_slide .slick-dots li button:before{
+        font-size: 3rem;
+        line-height: 3rem; 
+    }
+    #section_products .products_slide .slick-prev{
+        bottom: 0;
+        left: 5%;
+    }
+    #section_products .products_slide .slick-next{
+        bottom: 0;
+        left: 83%;
+    }
 }
 /* 보도자료/SNS소식 */
 #section_news{
@@ -903,7 +955,7 @@ main{
     margin-top: 100px;
 }
 #section_news h2{
-    font-size: 2.5vw;
+    font-size: 4.5rem;
     font-weight: 500;
     text-align: center;
 }
@@ -911,17 +963,20 @@ main{
     font-weight: 700;
     color:#E50112;
 }
-#section_news .red_box{
+#section_news::before{
+    content: '';
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30%;
+    width: 33%;
     height: 480px;
     border: 10px solid #E50112;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10%;
     z-index: 1;
+    pointer-events: none;
 }
 
 #section_news .news_slide{
@@ -956,25 +1011,25 @@ main{
 }
 
 #section_news .news_slide .newsbox .news_textbox .news_type{
-    font-size: 0.8125rem;
-    line-height: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
     font-weight: 700;
-    color: #222;
+    color: #E50112;
 }
 #section_news .news_slide .newsbox .news_textbox .news_title{
-    font-size: 0.9375rem;
-    line-height: 1.2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     font-weight: 500;
 }
 #section_news .news_slide .newsbox .news_textbox .news_date{
-    font-size: 0.6875rem;
+    font-size: 1.1rem;
     line-height: 1.2rem;
     color: #222;
 }
 
 #section_news .news_slide .slick-dots{
     position: absolute;
-    bottom: 30px;
+    bottom: 3%;
 }
 
 #section_news .news_slide .slick-dots li{
@@ -988,7 +1043,7 @@ main{
 }
 
 #section_news .news_slide .slick-dots li button:before{
-    font-size: 60px;
+    font-size: 6rem;
     line-height: 60px;
     width: 60px;
     height: 60px;
@@ -1001,18 +1056,24 @@ main{
 }
 @media (max-width:1400px){
     #section_news  h2{
-        font-size: 35px;
+        font-size: 3.5rem;
     }
 }
 @media (max-width:1200px){
-    #section_news .red_box {
-        display: none;
+    #section_news::before {
+        
     }
     
 }
 @media (max-width:993px){
     #section_news h2{
-        font-size: 25px;
+        font-size: 2.5rem;
+    }
+    #section_news::before{
+        top: 48%;
+        width: 90%;
+        height: 470px;
+        border: 5px solid #E50112;
     }
     
 }
@@ -1025,7 +1086,7 @@ main{
     margin-top: 100px;
 }
 #CSR h2{
-    font-size: 2.5vw;
+    font-size: 4.5rem;
     font-weight: 500;
     text-align: center;
 }
@@ -1062,6 +1123,7 @@ main{
     border-radius: 5%;
     overflow: hidden;
     position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 #CSR .Corp_SR li::after{
   position: absolute;
@@ -1092,7 +1154,7 @@ main{
     position: absolute;
     left: 30px;
     bottom: 50px;
-    font-size: 2rem;
+    font-size: 3.2rem;
     font-weight: 400;
     color: #eee;
     text-shadow: 1px 1px 5px rgb(0,0,0,0.5);
@@ -1103,7 +1165,7 @@ main{
     position: absolute;
     left: 30px;
     bottom: 25px;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: #eee;
     text-shadow: 1px 1px 5px rgb(0,0,0,0.5);
@@ -1132,7 +1194,7 @@ main{
 }
 @media (max-width:1400px){
     #CSR h2{
-        font-size: 35px;
+        font-size: 3.5rem;
     }
 }
 
@@ -1141,7 +1203,7 @@ main{
         height: 600px; 
     }
     #CSR h2{
-        font-size: 20px;
+        font-size: 2rem;
     }
     #CSR .Corp_SR{
         width: 85%;
@@ -1182,7 +1244,7 @@ main{
         grid-row: 3 / 4;
     }
     #CSR .Corp_SR>li h3{
-        font-size: 20px;
+        font-size: 2rem;
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -1305,16 +1367,16 @@ footer .footer_right .footer_sns{
 
     footer .footer_left ul li,
     footer .footer_left p {
-        font-size: 12px;
+        font-size: 1.2rem;
     }
     footer .footer_right {
         width: 370px;
     }
     footer .footer_right p{
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     footer .footer_right .footerbox span{
-        font-size: 20px;
+        font-size: 2rem;
     }
 }
 /* //footer */
