@@ -455,7 +455,6 @@ main{
 /* 사업분야소개 */
 #section_biz{
     width: 100%;
-    overflow: hidden;
     margin: auto; 
     margin-top: 100px;
 }
@@ -508,16 +507,15 @@ main{
 
 #section_biz .biz_img{
     width: 80%;
-    height: 625px;
+    height: 645px;
     margin: auto;
     overflow: hidden;
     margin-top: 30px;
-    border-radius: 3%;
+    border-radius: 5%;
 }
 
 #section_biz .biz_img img{
     max-width: 100%;
-    height: auto;
     margin: auto;
 }
 
@@ -539,7 +537,7 @@ main{
         font-size: 2rem;
     }
     #section_biz .biz_img{
-        height: 450px;
+        height: 440px;
     }
     #section_biz .biz_nav{
         width: 80%;
@@ -554,7 +552,7 @@ main{
 
 @media (max-width: 768px){
     #section_biz .biz_img{
-        height: 250px;
+        height: 255px;
     }
 }
 /* 글로벌 진출현황 */
