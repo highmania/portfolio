@@ -27,16 +27,12 @@ $(document).ready(function() {
     
     
     //사업분야 버튼 클릭 클래스on.off
-    $(document).ready(function() {
-        $('.biz_img .biz1').show();
-        $('.biz_nav li').click(function() {
-          var index = $(this).index();
-          $('.biz_img > div').hide();
-          $('.biz_img .biz' + (index + 1)).show();
-          $('.biz_nav li').removeClass('on');
-          $(this).addClass('on');
-        });
-      });
+    $('.biz_nav li').click(function() {
+      var index = $(this).index();
+      $('.biz_img a').hide().eq(index).stop(true).show();
+      $('.biz_nav li').removeClass('on');
+      $(this).addClass('on');
+    });
       
 
     //글로벌 진출 현황 국가별 클릭, 호출
