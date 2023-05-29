@@ -65,7 +65,7 @@ nav .mainmenu{
 }
 
 nav .mainmenu>li{
-    z-index: 9;
+    z-index: 999;
     width: 17%;
     height: 86px;
     line-height: 86px;
@@ -121,7 +121,48 @@ nav .submenu>li>a:hover {
 .mobile-nav-hide{
     display: none;
 }
-
+.mobile_menu{
+    position: absolute;
+    top : 0;
+    right: -340px;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top; 
+    padding: 40px 20px;
+    display: none;
+}
+.mobile_menu>li{
+    width: 100%;
+}
+.mobile_menu>li>a{
+    display: block;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    margin: 15px 0;
+}
+.mobile_menu>li>a:hover,
+.mobile_submenu>li>a:hover{
+    color: #E50112;
+}
+.mobile_submenu{
+    display: none;
+}
+.mobile_submenu>li{
+    line-height: 3rem;
+}
+.mobile_submenu>li>a{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #222;
+}
 @media (max-width:1400px){
     nav .mainmenu>li>a{
         font-size: 1.4vw;
@@ -150,13 +191,11 @@ nav .submenu>li>a:hover {
   
     .mobile-nav-hide {
       color: #222;
-      font-size: 3.2rem;
+      font-size: 3.5rem;
       cursor: pointer;
-      line-height: 50px;
-      transition: 0.5s;
-      position: fixed;
-      right: 20px;
-      top: 20px;
+      position: absolute;
+      top: 0px;
+      right: 50px;
       z-index: 9999;
       display: none;
     }
