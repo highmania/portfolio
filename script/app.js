@@ -11,23 +11,21 @@ $(document).ready(function() {
 
     // Mobile_menu 토글
       $('.mobile-nav-show').click(function() {
-        $('.mobile_menu, .mobile-nav-hide').stop(true).show().animate({'right': '0px'}, 300, 'linear');
+        $('.mobile_menu, .mobile-nav-hide, .mobile_nav_bg').stop(true).show().animate({'right': '0px'}, 300, 'linear');
       });
     
       $('.mobile-nav-hide').click(function() {
-        $('.mobile_menu, .mobile-nav-hide').stop(true).hide().animate({'right': '-340px'}, 300, 'linear');
+        $('.mobile_menu, .mobile-nav-hide, .mobile_nav_bg').stop(true).hide().animate({'right': '-340px'}, 300, 'linear');
       });
     // Mobile_submenu 토글
-      $('.mobile_menu>li').click(function() {
-        $(this).children('.mobile_submenu').stop(true).show().slideDown(1000);
-      })
-      $('.mobile_submenu').mouseleave(function() {
-      $(this).stop(true).hide();
-      })
-      $(document).click(function(event) {
-        if (!$(event.target).closest('.mobile_menu > li').length) {
-            $('.mobile_submenu').stop(true).hide();
-        }
+    $('.mobile_menu > li').click(function() {
+      var submenu = $(this).children('.mobile_submenu');
+      if (submenu.is(':hidden')) {
+          $('.mobile_submenu').hide();
+          submenu.stop(true).slideDown(500);
+      } else {
+          submenu.stop(true).hide();
+      }
     });
     //메인 슬라이드
     $('.slide').slick({
