@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <title>Orion</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/slick/slick.css">
@@ -13,11 +14,10 @@
     <script src="./script/jquery-3.6.4.min.js"></script>
     <script src="./script/slick.min.js"></script>
     <script src="./script/app.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 </head>
-
 <body>
-    
     <!-- header -->
     <header>
         <a href="#" class="logo"><img src="./images/Logo.png" alt="ORION_red"></a>
@@ -145,7 +145,7 @@
                         <a href="#"><img src="./images/slide1.jpg" alt="베이킹">
                             <div class="slide_text1">
                                 <p>맛있고 품질 좋은 제품을<br>
-                                합리적인 가격으로 공급합니다.</p>
+                                    합리적인 가격으로 공급합니다.</p>
                             </div>
                         </a>
                     </div>
@@ -153,49 +153,47 @@
                         <a href="#"><img src="./images/slide2.jpg" alt="제주폭포">
                             <div class="slide_text2">
                                 <p> 닥터유는 현대인의 식습관을 고려한<br>
-                                맞춤 영양 설계 브랜드로<br>
-                                맛있는 건강을 추구합니다.</p>
+                                    맞춤 영양 설계 브랜드로<br>
+                                    맛있는 건강을 추구합니다.</p>
                             </div>
                         </a>
                     </div>
                     <div class="slideimg">
                         <a href="#"><img src="./images/slide3.jpg" alt="자연원물농장">
-                            <div class="slide_text3">
+                            <div class="slide_text3 ">
                                 <p>마켓오네이처는 자연원물 그대로의<br>
-                                정직하고 건강한 맛을 담은<br>
-                                오리온의 간편식사대용식 브랜드입니다.</p>
+                                    정직하고 건강한 맛을 담은<br>
+                                    오리온의 간편식사대용식 브랜드입니다.</p>
                             </div>
                         </a>
                     </div>
                     <div class="slideimg">
                         <a href="#"><img src="./images/slide4.jpg" alt="바이오연구실">
-                            <div class="slide_text4">
-                            <p>진단키트 사업을 시작으로<br>
-                            백신, 신약 발굴 및 개발까지<br>
-                            제약/바이오 플랫폼 기업을 추구합니다.</p>
+                            <div class="slide_text4 ">
+                                <p>진단키트 사업을 시작으로<br>
+                                    백신, 신약 발굴 및 개발까지<br>
+                                    제약/바이오 플랫폼 기업을 추구합니다.</p>
                             </div>
                         </a>
                     </div>
-                    <div id="info_box">
-                        <div class="stock">
-                            <ul>
-                                <li><a href="#">주가정보</a></li>
-                                <li><a href="#">127,500</a></li>
-                                <li><a href="#">전일대비<br>
-                                        ▲100(0.08)</a></li>
-                            </ul>
-                        </div>
-                        <div class="IRinfo">
-                            <ul>
-                                <li><a href="#">IR 공시정보</a></li>
-                                <li><a href="#">2022 4분기 IR</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="info_box">
+                    <div class="stock">
+                        <ul>
+                            <li><a href="#">주가정보</a></li>
+                            <li><a href="#">127,500</a></li>
+                            <li><a href="#">전일대비<br>
+                                    ▲100(0.08)</a></li>
+                        </ul>
+                    </div>
+                    <div class="IRinfo">
+                        <ul>
+                            <li><a href="#">IR 공시정보</a></li>
+                            <li><a href="#">2023 1분기 IR</a></li>
+                        </ul>
                     </div>
                 </div>
-                </div>
-                
-
+            </div>
         </section>
         <!-- //메인슬라이드 -->
         <!-- 사업분야소개 -->
@@ -208,7 +206,7 @@
                 <li>마켓오네이처</li>
                 <li>바이오</li>
             </ul>
-            <div class="biz_img">
+            <div class="biz_img show show_Top">
                 <a href="#"><img src="./images/biz1.png" alt="초코파이"></a>
                 <a href="#"><img src="./images/biz2.png" alt="제주용암수"></a>
                 <a href="#"><img src="./images/biz3.png" alt="오!그래놀라제품시리즈"></a>
@@ -217,14 +215,14 @@
         </section>
         <!-- //사업분야소개 -->
         <!-- 글로벌 진출현황 -->
-        <h2 class="hidden">오리온의 글로벌 진출현황</h2>
-        <h2 class="global_h2">세계 속의 <span>오리온</span>은 앞서갑니다</h2>
         <section id="section_global">
+            <h2 class="global_h2">세계 속의 <span>오리온</span>은 앞서갑니다</h2>
+            <h2 class="hidden">오리온의 글로벌 진출현황</h2>
             <div class="global_text">
                 <p>22년 매출액 기준 제과업체
                     국내 <span>1</span>위 / 세계 <span>12</span>위 / 해외매출 <span>2.29</span>조</p>
             </div>
-            <div class="global_map">
+            <div class="global_map show show_top">
                 <div class="box"></div>
                 <ul class="nation_selection">
                     <li>중국</li>
@@ -237,39 +235,47 @@
                         <img src="./images/spot.png" alt="spot" class="redspot">
                         <div class="spotWrap">
                             <img src="./images/overseas_img1.png" alt="중국현지마트">
-                            <p class="spot_text">1993년 베이징사무소 개설<br>
-                                2013년 국내 식품업계 최초로 <br>
-                                중국시장에서 매출 <span>1</span>조 돌파
-                            </p>
+                            <div class="spot_text">
+                                <p>1993년 베이징사무소 개설<br>
+                                    2013년 국내 식품업계 최초로<br>
+                                    중국시장에서 매출 <span>1</span>조 돌파
+                                </p>
+                            </div>
                         </div>
                     </li>
                     <li class="spot">
                         <img src="./images/spot.png" alt="spot" class="redspot">
                         <div class="spotWrap">
                             <img src="./images/overseas_img2.png" alt="베트남가정">
-                            <p class="spot_text">1995년 베트남 진출<br>
-                                2021년 연매출 <span>3</span>천억 원을 돌파<br>
-                                누적 매출액 <span>2</span>조 원 달성
-                            </p>
+                            <div class="spot_text">
+                                <p>1995년 베트남 진출<br>
+                                    2021년 연매출 <span>3</span>천억 원을 돌파<br>
+                                    누적 매출액 <span>2</span>조 원 달성
+                                </p>
+                            </div>
                         </div>
                     </li>
                     <li class="spot">
                         <img src="./images/spot.png" alt="spot" class="redspot">
                         <div class="spotWrap">
                             <img src="./images/overseas_img3.png" alt="러시아현지마트">
-                            <p class="spot_text">2003년 러시아 법인 설립<br>
-                                2021년 연 매출 <span>1</span>천억원 돌파
-                            </p>
+                            <div class="spot_text">
+                                <p>2003년 러시아 법인 설립<br>
+                                    2021년 연 매출 <span>1</span>천억원 돌파
+                                </p>
+                            </div>
                         </div>
                     </li>
                     <li class="spot">
                         <img src="./images/spot.png" alt="spot" class="redspot">
                         <div class="spotWrap">
                             <img src="./images/overseas_img4.png" alt="인도현지생산공장">
-                            <p class="spot_text">2021년 현지 제조업체<br>
-                                만 벤처스(Mann Ventures)와 합작.<br>
-                                ‘라자스탄’(Rajasthan)주에 생산 공장 완공
-                            </p>
+                            <div class="spot_text">
+                                <p>2021년 현지 제조업체<br>
+                                    만 벤처스(Mann Ventures)와 합작.<br>
+                                    ‘라자스탄’(Rajasthan)주에 생산 공장 완공
+                                </p>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -280,7 +286,7 @@
         <h2 class="hidden">오리온 대표제품소개</h2>
         <section id="section_products">
             <h2>한국을 넘어 세계를 사로잡은 <span>오리온</span> 제품들</h2>
-            <ul class="products_slide">
+            <ul class="products_slide show show_bottom">
                 <li class="item">
                     <a href="#"><img src="./images/product1.png" alt="초코파이"></a>
                     <div class="p_text">
@@ -375,11 +381,13 @@
             <div class="red_box"></div>
             <ul class="news_slide">
                 <li class="newsbox">
-                    <a href="#"><img src="./images/news1.png" alt="마이구미 아이셔 한정판 기사"></a>
+                    <a href="#"><img src="./images/news1.png" alt="마이구미 아이셔 한정판 출시"></a>
                     <div class="news_textbox">
                         <p class="news_type">보도자료</p>
-                        <a href="#"><p class="news_title">오리온, 화이트데이 시즌 한정판<br>
-                            ‘마이구미 체리하트∙아이셔 자두맛’ 출시</p></a>
+                        <a href="#">
+                            <p class="news_title">오리온, 화이트데이 시즌 한정판<br>
+                                ‘마이구미 체리하트∙아이셔 자두맛’ 출시</p>
+                        </a>
                         <p class="news_date">2023.03.02</p>
                     </div>
                 </li>
@@ -387,37 +395,70 @@
                     <a href="#"><img src="./images/news2.png" alt="꼬북칩 크런치즈X와인 댓글 이벤트"></a>
                     <div class="news_textbox">
                         <p class="news_type">인스타그램</p>
-                        <a href="#"><p class="news_title">오리온, 꼬북칩 크런치즈x와인 조합<br>
-                            기대평 댓글 남기기 이벤트!</p></a>
-                        <p class="news_date">2023.03.10</p>
+                        <a href="#">
+                            <p class="news_title">오리온, 꼬북칩 크런치즈x와인 조합<br>
+                                기대평 댓글 남기기 이벤트!</p>
+                        </a>
+                        <p class="news_date">2023.05.26</p>
                     </div>
                 </li>
                 <li class="newsbox">
                     <a href="#"><img src="./images/news3.png" alt="포카칩 생산공장 유튜브"></a>
                     <div class="news_textbox">
                         <p class="news_type">유튜브</p>
-                        <a href="#"><p class="news_title">오리온 공식썰 오!피셜 Ep.02 포카칩<br>
-                            감자에 누구보다 진심인<br>
-                            오리온 감자스낵 유니버스</p></a>
-                        <p class="news_date">2022.07.08</p>
+                        <a href="#">
+                            <p class="news_title">오리온 공식썰 오!피셜 Ep.02 포카칩<br>
+                                감자에 누구보다 진심인<br>
+                                오리온 감자스낵 유니버스</p>
+                        </a>
+                        <p class="news_date">2023.07.08</p>
                     </div>
                 </li>
                 <li class="newsbox">
                     <a href="#"><img src="./images/news4.png" alt="마켓오브라우니 리뉴얼이벤트"></a>
                     <div class="news_textbox">
                         <p class="news_type">인스타그램</p>
-                        <a href="#"><p class="news_title">#이달의_마켓오 쫀득~꾸덕🍫<br>
-                            #마켓오_브라우니 리뉴얼 기념 이벤트!</p></a>
+                        <a href="#">
+                            <p class="news_title">#이달의_마켓오 쫀득~꾸덕🍫<br>
+                                #마켓오_브라우니 리뉴얼 기념 이벤트!</p>
+                        </a>
                         <p class="news_date">2023.03.10</p>
                     </div>
                 <li class="newsbox">
                     <a href="#"><img src="./images/news5.png" alt="초코파이봄꾸미기 이벤트"></a>
                     <div class="news_textbox">
                         <p class="news_type">인스타그램</p>
-                        <a href="#"><p class="news_title">초코파이에 나만의 봄을 담은<br>
-                            🌸봄초코파이 꾸미기단 갤러리🌸<br>
-                            를 소개합니다!</p></a>
-                        <p class="news_date">2023.03.08</p>
+                        <a href="#">
+                            <p class="news_title">초코파이에 나만의 봄을 담은<br>
+                                🌸봄초코파이 꾸미기단 갤러리🌸<br>
+                                를 소개합니다!</p>
+                        </a>
+                        <p class="news_date">2023.04.15</p>
+                    </div>
+                </li>
+                <li class="newsbox">
+                    <a href="#"><img src="./images/news6.jpg" alt="오리온생감자칩 탐방기"></a>
+                    <div class="news_textbox">
+                        <p class="news_type">인스타그램</p>
+                        <a href="#">
+                            <p class="news_title">오리온 감자칩을 너~무 사랑한 나머지<br>
+                                감자에 얽힌 비밀을 파헤치러 오리온으로 출동🔍<br>
+                                오리온 생감자칩이 모~두 맛있는 이유!<br>
+                                여러분들에게 모두 알려드립니다(˵ ͡° ͜ʖ ͡°˵)</p>
+                        </a>
+                        <p class="news_date">2023.07.16</p>
+                    </div>
+                </li>
+                <li class="newsbox">
+                    <a href="#"><img src="./images/news7.jpg" alt="캔디 마켓오 민티 출시"></a>
+                    <div class="news_textbox">
+                        <p class="news_type">인스타그램</p>
+                        <a href="#">
+                            <p class="news_title">타블렛도 이제 쟁여두고 먹을 수 있다고?👀<br>
+                                뱉을 필요 없는 깔끔한 리프레시 캔디 마켓오 민티!<br>
+                                20% 가성비 대용량 밸류팩으로 탄생하다💨</p>
+                        </a>
+                        <p class="news_date">2023.08.03</p>
                     </div>
                 </li>
             </ul>
@@ -428,7 +469,7 @@
         <section id="CSR">
             <h2>세상을 향한 따뜻한 실천, <span>오리온</span>의 윤리경영</h2>
             <ul class="Corp_SR">
-                <li>
+                <li class="show show_left">
                     <img src="./images/csr1.png" alt="윤리경영_고객img">
                     <div class="CSR_text">
                         <a href="#">
@@ -438,7 +479,7 @@
                     </div>
 
                 </li>
-                <li>
+                <li class="show">
                     <img src="./images/csr2.png" alt="윤리경영_협력회사img">
                     <div class="CSR_text">
                         <a href="#">
@@ -447,7 +488,7 @@
                         </a>
                     </div>
                 </li>
-                <li>
+                <li class="show show_left">
                     <img src="./images/csr3.png" alt="윤리경영_임직원img">
                     <div class="CSR_text">
                         <a href="#">
@@ -456,7 +497,7 @@
                         </a>
                     </div>
                 </li>
-                <li>
+                <li class="show">
                     <img src="./images/csr4.png" alt="윤리경영_주주img">
                     <div class="CSR_text">
                         <a href="#">
@@ -465,7 +506,7 @@
                         </a>
                     </div>
                 </li>
-                <li>
+                <li class="show show_bottom">
                     <img src="./images/csr5.png" alt="윤리경영_사회img">
                     <div class="CSR_text">
                         <a href="#">
