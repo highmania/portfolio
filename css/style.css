@@ -187,9 +187,12 @@ nav .submenu>li>a:hover {
     }
 }
 @media (max-width:1023px){
+    header{
+        height: 60px;
+    }
     header .logo img{  
         width: 150px;
-        margin: 10px auto; 
+        margin: auto; 
     }
 
     nav .mainmenu{
@@ -201,7 +204,7 @@ nav .submenu>li>a:hover {
       color: #222;
       font-size: 4rem;
       cursor: pointer;
-      line-height: 70px;
+      line-height: 55px;
       transition: 0.5s;
       z-index: 9998;
       margin-right: 20px;
@@ -830,7 +833,7 @@ main{
     height: 80vh;
     overflow: hidden;
     padding: 30px 0;
-    background-color: #f6f6f6;
+    background-color: rgba(219, 183, 125, 0.1);
 }
 
 #section_products h2{
@@ -868,8 +871,8 @@ main{
     height: auto;
     padding: 3%;
     margin: auto;
-    background-color: rgba(219, 183, 125, 0.7);
-    border-radius: 50%;
+    background-color: rgb(250, 205, 137);
+    border-radius: 20px;
 }
 
 #section_products .products_slide .item .p_text{
@@ -995,8 +998,7 @@ main{
         height: auto;
         padding: 5%;
         margin: auto;
-        background-color: rgba(219, 183, 125, 0.7);
-        border-radius: 50%;
+        border-radius: 20px;
     }
     #section_products .products_slide .item .p_text{
         padding: 10px;
