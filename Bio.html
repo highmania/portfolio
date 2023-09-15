@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Orion</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick/slick.css">
+    <link rel="stylesheet" href="./css/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="./script/jquery-3.6.4.min.js"></script>
+    <script src="./script/slick.min.js"></script>
+    <script src="./script/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="index.html" class="logo"><img src="./images/Logo.png" alt="ORION_red"></a>
+        <div class="submenu_bg"></div>
+        <nav>
+            <h2 class="hidden">오리온 메인메뉴</h2>
+            <ul class="mainmenu">
+                <li><a href="company.html">사업 및 사업소개</a>
+                    <ul class="submenu">
+                        <li><a href="company.html">오리온</a></li>
+                        <li><a href="company_affiliate1.html">오리온 계열사</a></li>
+                        <li><a href="company_affiliate2.html">오리온홀딩스 계열사</a></li>
+                        <li><a href="location.html">위치안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="product.html">브랜드소개</a>
+                    <ul class="submenu">
+                        <li class="on"><a href="product.html">오리온제과</a></li>
+                        <li><a href="Dryou.html">닥터유</a></li>
+                        <li><a href="MarketOnature.html">마켓오네이처</a></li>
+                        <li><a href="Bio.html">바이오</a></li>
+                    </ul>
+                </li>
+                <li><a href="csr.html">윤리경영</a>
+                    <ul class="submenu">
+                        <li><a href="csr.html">개요</a></li>
+                        <li><a href="csr.html">고객</a></li>
+                        <li><a href="csr.html">임직원</a></li>
+                        <li><a href="csr.html">협력회사</a></li>
+                        <li><a href="csr.html">주주</a></li>
+                        <li><a href="csr.html">사회</a></li>
+                        <li><a href="csr.html">보고서 및 주요성과</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">투자정보</a>
+                    <ul class="submenu">
+                        <li><a href="#">주식정보 </a></li>
+                        <li><a href="#">재무정보</a></li>
+                        <li><a href="#">IR문의</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">뉴스룸</a>
+                    <ul class="submenu">
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">유튜브</a></li>
+                        <li><a href="#">인스타그램</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">고객센터</a>
+                    <ul class="submenu">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">상담페이지</a></li>
+                        <li><a href="#">피해보상기구</a></li>
+                        <li><a href="#">자주 묻는 질문(FAQ)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    </header>
+    <div>
+        <ul class="mobile_menu">
+            <li><a href="company.html">사업 및 사업소개</a>
+                <ul class="mobile_submenu">
+                    <li><a href="company.html">오리온</a></li>
+                    <li><a href="company_affiliate1.html">오리온 계열사</a></li>
+                    <li><a href="company_affiliate2.html">오리온홀딩스 계열사</a></li>
+                    <li><a href="location.html">위치안내</a></li>
+                </ul>
+            </li>
+            <li><a href="product.html">브랜드소개</a>
+                <ul class="mobile_submenu">
+                    <li class="on"><a href="product.html">오리온제과</a></li>
+                    <li><a href="Dryou.html">닥터유</a></li>
+                    <li><a href="MarketOnature.html">마켓오네이처</a></li>
+                    <li><a href="Bio.html">바이오</a></li>
+                </ul>
+            </li>
+            <li><a href="csr.html">윤리경영</a>
+                <ul class="mobile_submenu">
+                    <li><a href="csr.html">개요</a></li>
+                    <li><a href="csr.html">고객</a></li>
+                    <li><a href="csr.html">임직원</a></li>
+                    <li><a href="csr.html">협력회사</a></li>
+                    <li><a href="csr.html">주주</a></li>
+                    <li><a href="csr.html">사회</a></li>
+                    <li><a href="csr.html">보고서 및 주요성과</a></li>
+                </ul>
+            </li>
+            <li><a href="#">투자정보</a>
+                <ul class="mobile_submenu">
+                    <li><a href="#">주식정보 </a></li>
+                    <li><a href="#">재무정보</a></li>
+                    <li><a href="#">IR문의</a></li>
+                </ul>
+            </li>
+            <li><a href="#">뉴스룸</a>
+                <ul class="mobile_submenu">
+                    <li><a href="#">보도자료</a></li>
+                    <li><a href="#">유튜브</a></li>
+                    <li><a href="#">인스타그램</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객센터</a>
+                <ul class="mobile_submenu">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">상담페이지</a></li>
+                    <li><a href="#">피해보상기구</a></li>
+                    <li><a href="#">자주 묻는 질문(FAQ)</a></li>
+                </ul>
+            </li>
+        </ul>
+        <i class="mobile-nav-toggle mobile-nav-hide bi bi-x"></i>
+    </div>
+    <div class="mobile_nav_bg"></div>
+    <!-- //header -->
+    <!-- main -->
+    <main>
+        <div class="sub_title product_sub">
+            <h1>브랜드 소개</h1>
+            <ul class="biz_nav">
+                <li><a href="product.html">오리온제과</a></li>
+                <li><a href="Dryou.html">닥터유</a></li>
+                <li><a href="MarketOnature.html">마켓오네이처</a></li>
+                <li class="on"><a href="Bio.html">바이오</a></li>
+            </ul>
+        </div>
+        <div class="sub_section show show_top">
+            <h2>식품을 넘어 글로벌 헬스케어 기업으로 도약</h2>
+            <img src="./images/bio_img01.jpg" alt="산둥루캉하오리요우 연구소">
+            <p>오리온그룹은 2020년 지속 성장을 위한 신수종 사업 분야로 바이오를 선정하고 식품을 넘어 삶의 질을 높이는 헬스케어 분야로 사업을 확장했습니다. 중국 국영제약기업 ‘산둥루캉의약’과 함께 지난해 3월 합자법인 ‘산둥루캉하오리요우’를 설립했으며, 이를 통해 국내 바이오 유망기술을 도입해 중국 현지에 상용화하는 사업을 펼치고 있습니다.
+
+                현재 발병률이 높은 암 중증질환 등을 조기 발견하는 체외진단 분야 및 전염성질환 백신 분야를 중점 사업으로 추진하고 있으며, 향후 합성의약품, 신약개발 등으로 사업영역을 확대해 나갈 계획입니다.
+                
+                오리온그룹은 국내 우수 바이오 기업을 발굴하기 위해 국내 금융권 제약∙바이오 분야 최고 전문가들이 참여하는 ‘한∙중 제약∙바이오 발전 포럼’을 정기적으로 개최하고 있습니다. 포럼에서 발굴된 바이오 기술은 한국, 중국, 일본 등 국내외 바이오 학계, 의료계 전문가들의 객관적인 기술 평가 및 시장성 검증을 거치게 되며, 최종 선정된 국내 바이오 기술은 중국 합자법인이 중국 내 임상 및 인허가, 생산, 판매 및 마케팅을 추진합니다.
+            </p>
+        </div>
+        <div class="sub_section show">
+            <h2>중국 내 대장암 진단키트 상용화 추진</h2>
+            <img src="./images/bio_img02.jpg" alt="지노믹트리 계약 체결식">
+            <p>오리온그룹은 중국 내 합자법인 산둥루캉하오리요우를 통해 2021년 5월 국내 암 체외진단 전문기업 ‘지노믹트리’와 대장암 체외진단 기술도입 본계약을 체결하고 중국 현지에 암 체외진단 제품 양산을 위한 인프라(실험실, 생산시설)를 구축했습니다. 2022년에는 생산된 제품으로 중국 내 임상시험을 진행할 예정입니다.
+
+                현재 대장암 조기진단 분야는 글로벌 시장성이 높은 것으로 평가받고 있습니다. 중국은 의료기관 내 대장 내시경 장비 보급률이 낮아 연간 28만 명이 대장암으로 사망하고 있습니다. 의료 재정 부담 해소를 위한 정부의 암 조기진단 필요성이 높아지고 있어 중국 내 대장암 진단키트에 대한 시장성이 높습니다. 지노믹트리의 대장암 진단키트는 1~2g 분변만으로 대장암을 90% 정확도로 판별할 수 있고, 8시간 내에 검사결과를 신속하게 확인할 수 있어 대장암 조기진단 분야에서 경쟁 우위를 확보할 수 있을 것으로 예상됩니다.
+            </p>
+        </div>
+        <div class="sub_section show show_left">
+            <h2>세계 최초 성인용 결핵백신 개발 추진</h2>
+            <img src="./images/bio_img03.jpg" alt="중국 산둥성 지닝시 ‘중국 백신 개발사업 지원∙협력' 계약 체결식">
+            <p>오리온그룹은 2022년 2월 글로벌 백신 전문기업 ‘큐라티스’와 결핵백신 공동개발을 위한 계약을 체결하고, 추후 합자법인을 설립해 성인용 결핵백신을 개발하고 임상 및 인허가를 추진하는데 합의했습니다. 같은 해 7월에는 결핵백신 개발 관련해 중국 산둥성 지닝시와 ‘중국 백신 개발사업 지원∙협력 계약’을 맺었습니다. 이번 계약을 통해 산둥루캉하오리요우는 지닝시 고신구에 위치한 바이오 산업단지 내에 백신 생산공장 건설을 위한 약 4만 9600 ㎡ (1만 5천 평) 규모의 부지를 확보하고, 산둥성 정부와 지닝시로부터 공장 생산설비 구축 및 인허가 등의 지원을 받게 됐습니다. 중국 바이오 시장 진출 시 가장 중요한 과정으로 꼽히는 공장 부지 확보 및 인허가 등에 대한 정부의 전폭적인 지원을 받게 된 점에서 의미가 큽니다.
+
+                산둥성 정부는 2022년 초 결핵백신 개발 사업을 ‘중점 프로젝트’로 선정하고 적극적인 지원을 펼치고 있습니다. 결핵은 인류 역사상 가장 많은 생명을 앗아간 전염성 질병으로 전 세계적으로 영유아를 대상으로 하는 BCG만이 백신으로 상용화되어 있으나, 성인용 결핵백신은 전무합니다. 특히 중국 정부에서도 결핵을 중점관리 전염성 질병으로 지정하는 등 국가적 차원에서 관심이 많은 상황이라 결핵백신 개발 사업에 탄력을 받을 수 있을 것으로 예상됩니다.
+                
+                오리온그룹은 산둥루캉하오리요우를 통해 2024년 완공을 목표로 총 900억여 원을 투자하고 최첨단 백신 생산설비를 갖춘 공장을 설립할 계획입니다. 현재 백신공장 설계에 착수했으며, 공장이 완공되면 임상시험에 돌입할 예정입니다.
+            </p>
+        </div>
+        <a id="toTop" href="#"><img src="./images/top_button.png" alt="TOP"></a>
+    </main>
+    <!-- //main -->
+    <!-- footer -->
+    <footer>
+        <div class="footer_left">
+            <a href="#"><img src="./images/flogo.png" alt="ORION_red"></a>
+            <ul>
+                <li><a href="#">법적고지 </a></li>
+                <li><a href="#">개인정보처리방침 </a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
+            <ul>
+                <li>(주)오리온 서울시 용산구 백범로 90다길 13</li>
+                <li>사업자등록번호 : 709-81-00727</li>
+                <li>대표이사 : 이승준</li>
+            </ul>
+            <p>Copyrightⓒ2023 ORION Corp. All rights reserved</p>
+        </div>
+        <div class="footer_right">
+            <div class="footerbox">
+                <p>
+                    고객센터<br>
+                    <span>080-023-5700</span><br>
+                    (수신자부담)<br>
+                    평일 09:00-18:00<br>
+                    (주말 및 공휴일 휴무)
+                </p>
+                <div class="footer_sns">
+                    <a href="#"><img src="./images/icon_youtube.png" alt="유튜브바로가기icon"></a>
+                    <a href="#"><img src="./images/icon_instagram.png" alt="인스타그램바로가기icon"></a>
+                    <a href="#"><img src="./images/icon_facebook.png" alt="페이스북바로가기icon"></a>
+                </div>
+            </div>
+            <div class="footerbox">
+                <p>
+                    전화번호<br>
+                    <span>02-710-6000</span><br>
+                    제품구입문의<br>
+                    <span>02-710-6033</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+
+</html>
