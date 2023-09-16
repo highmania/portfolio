@@ -1534,6 +1534,7 @@ footer .footer_right .footer_sns{
     left: 50%;
     transform: translate(-50%, -30%);
 }
+
 .sub_title span{
     font-weight: 500;
     color:#f62837;
@@ -1550,7 +1551,6 @@ footer .footer_right .footer_sns{
     left: 50%;
     transform: translate(-50%, -10%);
 }
-
 .sub_title .biz_nav>li{
     width: 25%;
     height: 40px;
@@ -1620,6 +1620,7 @@ footer .footer_right .footer_sns{
     line-height: 4.5rem;
     word-break: keep-all;
 }
+
 .sub_map{
     width: 60%;
     margin: auto;
@@ -1657,7 +1658,7 @@ footer .footer_right .footer_sns{
 }
 .products_container ul li{
     width: 30%;
-    min-width: 300px;
+    min-width: 270px;
     text-align: center;
     margin: 4rem 1%;
     position: relative;
@@ -1683,4 +1684,41 @@ footer .footer_right .footer_sns{
     margin: 1rem auto;
     font-size: 2rem;
     font-weight: 500;
+}
+
+@media (max-width:768px){
+    .sub_title {
+        height: 20vh;
+    }
+    .sub_title h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        top : 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .sub_title .biz_nav{
+        width: 85%;
+    }
+    .sub_title .biz_nav>li{
+        font-size: 1.1rem;
+        line-height: 4rem;
+        position: relative;
+    }
+    .sub_title .biz_nav>li.on{
+        font-size: 1.2rem;
+    }
+    .sub_section{
+        margin: 50px auto;
+        width: 70%;
+    }
+    .sub_section h2{
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    .sub_section p{
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        word-break: keep-all;
+    }
 }
