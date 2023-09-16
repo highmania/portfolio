@@ -1725,6 +1725,10 @@ footer .footer_right .footer_sns{
         width: 70%;
         flex-direction: column;
     }
+    .sub_map #map{
+        width: 100%;
+        height: 350px;
+    }
     .sub_map .address h2{
         font-size: 2rem;
         line-height: 3rem;
