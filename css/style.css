@@ -1686,7 +1686,7 @@ footer .footer_right .footer_sns{
     font-weight: 500;
 }
 
-@media (max-width:768px){
+@media (max-width:993px){
     .sub_title {
         height: 20vh;
     }
