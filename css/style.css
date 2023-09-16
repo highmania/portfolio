@@ -1721,7 +1721,18 @@ footer .footer_right .footer_sns{
         line-height: 2.5rem;
         word-break: keep-all;
     }
-	.sub_map{
+    .sub_map{
+        width: 70%;
         flex-direction: column;
+    }
+    .sub_map .address h2{
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 10px;
+    }
+    .sub_map .address p{
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        font-weight: 500;
     }
 }
