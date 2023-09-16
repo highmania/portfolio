@@ -1721,4 +1721,7 @@ footer .footer_right .footer_sns{
         line-height: 2.5rem;
         word-break: keep-all;
     }
+	.sub_map{
+        flex-direction: column;
+    }
 }
