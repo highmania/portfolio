@@ -1553,13 +1553,13 @@ footer .footer_right .footer_sns{
 }
 .sub_title .biz_nav>li{
     width: 25%;
-    height: 40px;
+    height: 4rem;
     text-align: center;
     color: #808080;
     margin-left: 3%;
     font-size: 1.8rem;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 4rem;
     position: relative;
 }
 .sub_title .biz_nav>li:nth-child(1){
@@ -1686,27 +1686,25 @@ footer .footer_right .footer_sns{
     font-weight: 500;
 }
 
-@media (max-width:993px){
+@media (max-width:1200px){
     .sub_title {
         height: 20vh;
     }
     .sub_title h1{
         font-size: 2.5rem;
         line-height: 3rem;
-        top : 50%;
+        top : 40%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -40%);
     }
     .sub_title .biz_nav{
-        width: 85%;
+        width: 90%;
     }
     .sub_title .biz_nav>li{
-        font-size: 1.1rem;
-        line-height: 4rem;
-        position: relative;
+        font-size: 1.3rem;
     }
     .sub_title .biz_nav>li.on{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .sub_section{
         margin: 50px auto;
