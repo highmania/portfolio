@@ -148,12 +148,30 @@
             </ul>
         </div>
         <div class="sub_map">
-            <div id="map"></div>
+            <div id="map" class="map"></div>
             <div class="address">
                 <h2>(주) 오리온 본사</h2>
                 <p>주소 : 서울특별시 용산구 백범로 90다길 13 (문배동 30-10)<br>
                    TEL : 02-710-6000<br>
                    FAX : 02-718-4825</p>
+            </div>            
+        </div>
+        <div class="sub_map">
+            <div id="map2" class="map"></div>
+            <div class="address">
+                <h2>오리온농협(주)</h2>
+                <p>주소 : 경상남도 밀양시 부북면 점필재로 229-1<br>
+                   TEL : 055-802-5000<br>
+                   FAX : 055-802-8034</p>
+            </div>            
+        </div>
+        <div class="sub_map">
+            <div id="map3" class="map"></div>
+            <div class="address">
+                <h2>(주)오리온 제주용암수</h2>
+                <p>주소 : 제주특별자치도 제주시 구좌읍 일주동로 2706-27<br>
+                   TEL : 064-729-9900<br>
+                   FAX : 064-729-9999</p>
             </div>            
         </div>
         <a id="toTop" href="#"><img src="./images/top_button.png" alt="TOP"></a>
@@ -204,17 +222,51 @@
     <!-- //footer -->
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2ee46ed28e383b4ce6832b2ba1cd2879" type="text/javascript"></script>
     <script>
+        // first map
         var mapContainer = document.getElementById('map'),
-        mapOption = { 
-            center: new kakao.maps.LatLng(37.536116308860365, 126.97002811800748), 
-            level: 3
-        };
+            mapOption = { 
+                center: new kakao.maps.LatLng(37.536116308860365, 126.97002811800748), 
+                level: 3
+            };
         var map = new kakao.maps.Map(mapContainer, mapOption);
-    
+
         var markerPosition  = new kakao.maps.LatLng(37.536116308860365, 126.97002811800748); 
 
         var marker = new kakao.maps.Marker({
             position: markerPosition
+        });
+
+        marker.setMap(map);
+
+        // second map
+        var mapContainer2 = document.getElementById('map2'),
+            mapOption2 = { 
+                center: new kakao.maps.LatLng(37.536116308860365, 126.97002811800748), 
+                level: 3
+            };
+        var map2 = new kakao.maps.Map(mapContainer2, mapOption2);
+
+        var markerPosition2  = new kakao.maps.LatLng(37.536116308860365, 126.97002811800748); 
+
+        var marker2 = new kakao.maps.Marker({
+            position: markerPosition2
+        });
+
+        marker2.setMap(map2);
+
+        // third map
+        var mapContainer3 = document.getElementById('map3'),
+            mapOption3= { 
+                center: new kakao.maps.LatLng(37.536116308860365, 126.97002811800748), 
+                level: 3
+        };
+
+        var map3= new kakao.maps.Map(mapContainer3,mapOption3);
+
+        var markerPosition3= new kakao.maps.LatLng(37.536116308860365,126.97002811800748);
+
+        var marker3= newkakako.marks.Marker({
+            position :markerPosition,
         });
 
         marker.setMap(map);
