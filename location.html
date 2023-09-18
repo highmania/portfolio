@@ -143,7 +143,7 @@
             <ul class="biz_nav">
                 <li><a href="company.html">오리온</a></li>
                 <li><a href="company_affiliate1.html">오리온계열사</a></li>
-                <li><a href="company_affiliate2.html">오리온홀딩스계열사</a></li>
+                <li><a href="company_affiliate2.html">오리온홀딩스 계열사</a></li>
                 <li class="on"><a href="location.html">위치안내</a></li>
             </ul>
         </div>
@@ -242,7 +242,7 @@
         var mapContainer2 = document.getElementById('map2'),
             mapOption2 = { 
                 center: new kakao.maps.LatLng( 35.48329361708156, 128.72401521959128), 
-                level: 4
+                level: 3
             };
         var map2 = new kakao.maps.Map(mapContainer2, mapOption2);
 
@@ -258,18 +258,17 @@
         var mapContainer3 = document.getElementById('map3'),
             mapOption3= { 
                 center: new kakao.maps.LatLng(33.54080649701277, 126.81386532144732), 
-                level: 4
-        };
-
+                level: 3
+            };
         var map3= new kakao.maps.Map(mapContainer3,mapOption3);
 
         var markerPosition3= new kakao.maps.LatLng(33.54080649701277, 126.81386532144732);
 
-        var marker3= new kakao.maps.Marker({
+        var marker3= newkakako.marks.Marker({
             position :markerPosition3
         });
 
-        marker3.setMap(map3);
+        marker.setMap(map3);
     </script>  
 </body>
 
