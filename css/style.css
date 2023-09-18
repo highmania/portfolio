@@ -45,7 +45,7 @@ header {
     z-index: 999;
     display: flex;
 }
-.active{
+.bg_active{
     background-color: #fff;
     transition: all 0.5s;
 }
@@ -322,8 +322,8 @@ main{
     #mainslide .container .slide .slide_text3,
     #mainslide .container .slide .slide_text4{
         top: 35%;
-        font-size: 3.5rem;
-        line-height: 5rem;
+        font-size: 3rem;
+        line-height: 4rem;
     }
     #mainslide .container .slide .slick-dots{
         bottom: 20%;
@@ -346,8 +346,8 @@ main{
     #mainslide .container .slide .slide_text3,
     #mainslide .container .slide .slide_text4{
         top: 40%;
-        font-size: 2.8rem;
-        line-height: 4.5rem;
+        font-size: 2rem;
+        line-height: 3rem;
     }
     #mainslide .container .slide .slick-dots{
         bottom: 27%;
@@ -460,23 +460,23 @@ main{
         width: 80%;
     }
     .container .info_box .stock ul>li:nth-child(1){
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 7rem;
     }
     .container .info_box .stock ul>li:nth-child(2){
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 7rem;
     }
     .container .info_box .stock ul>li:nth-child(3){
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 3.5rem;
     }
     .container .info_box .IRinfo ul>li:nth-child(1){
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 7rem;
     }
     .container .info_box .IRinfo ul>li:nth-child(2){
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 7rem;
     }
 }
@@ -668,9 +668,8 @@ main{
 
 #section_global .global_map .nation_selection>li{
     font-size: 2rem;
-    width: 13%;
     height: 2rem;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
     margin-left: 20%;
 }
@@ -777,6 +776,7 @@ main{
         width : 80%;
         flex-direction: row;
         justify-content: center;
+        
     }
     #section_global .global_map .nation_selection::before{
         width : 75%;
@@ -791,6 +791,7 @@ main{
     #section_global .global_map .nation_selection>li{
         font-size: 1.5rem;
         margin: 0 3%;
+        text-align: center;
     }
 
     #section_global .global_map .nations_spot .redspot{
@@ -1166,6 +1167,7 @@ main{
         font-size: 2.8rem;
     }
     #section_news::before{
+        margin-top: 80px;
         border: 5px solid #f62837;
     }
     #section_news .news_slide .slick-dots li{
@@ -1191,7 +1193,7 @@ main{
     height: 80vh;  
     margin: auto;
     position: relative;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 #CSR h2{
     font-size: 4.5rem;
@@ -1203,10 +1205,6 @@ main{
 #CSR h2 span{
     font-weight: 700;
     color:#f62837;
-}
-#CSR {
-    width: 100%;
-    overflow: hidden;
 }
 
 #CSR .Corp_SR{
@@ -1322,8 +1320,7 @@ main{
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         gap: 10px;
-        margin: auto;
-        margin-top: 45px;
+        margin: 45px auto;
     }
     #CSR .Corp_SR li{
         width: 100%;
@@ -1559,7 +1556,7 @@ footer .footer_right .footer_sns{
     margin-left: 3%;
     font-size: 1.8rem;
     font-weight: 700;
-    line-height: 4rem;
+    line-height: 2rem;
     position: relative;
 }
 .sub_title .biz_nav>li:nth-child(1){
