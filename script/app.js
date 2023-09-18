@@ -13,9 +13,9 @@ $(document).ready(function() {
   $(document).on("scroll", function() {
     let scrollTop = $(window).scrollTop();
       if (scrollTop > 50) {
-        $("header, .submenu_bg").addClass("active");
+        $("header, .submenu_bg").addClass("bg_active");
       } else {
-        $("header, .submenu_bg").removeClass("active");
+        $("header, .submenu_bg").removeClass("bg_active");
       }
     });
 
