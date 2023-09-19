@@ -248,19 +248,19 @@ main{
     height: 80vh; 
 }
 #mainslide .container .slide .slideimg1{
-    background: url(../images/slide1.jpg) no-repeat;
+    background: url(../images/slide1.jpg) no-repeat center;
     background-size: cover;
 }
 #mainslide .container .slide .slideimg2{
-    background: url(../images/slide2.jpg) no-repeat;
+    background: url(../images/slide2.jpg) no-repeat center;
     background-size: cover;
 }
 #mainslide .container .slide .slideimg3{
-    background: url(../images/slide3.jpg) no-repeat;
+    background: url(../images/slide3.jpg) no-repeat center;
     background-size: cover;
 }
 #mainslide .container .slide .slideimg4{
-    background: url(../images/slide4.jpg) no-repeat;
+    background: url(../images/slide4.jpg) no-repeat center;
     background-size: cover;
 }
 
