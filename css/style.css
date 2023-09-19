@@ -1065,13 +1065,12 @@ main{
     font-weight: 700;
     color:#f62837;
 }
-#section_news::before{
+#section_news .news_area::before{
     content: '';
     display: block;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
-    margin-top: 20px;
     transform: translate(-50%, -50%);
     width: 320px;
     height: 480px;
@@ -1081,28 +1080,33 @@ main{
     z-index: 1;
     pointer-events: none;
 }
-
-#section_news .news_slide{
+#section_news .news_area{
     width: 100%;
     height: 650px;
-    margin: auto;
     margin-top: 30px;
     background-color: #FCE5E7;
+    position: relative;
 }
-#section_news .news_slide .newsbox{
+#section_news .news_area .news_slide{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#section_news .news_area .news_slide .newsbox{
     width: 100%;
     height: 400px;
-    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;    
 }
-#section_news .news_slide .newsbox:hover{
+#section_news .news_area .news_slide .newsbox:hover{
     transform: scale(1.03);
     transition: all 0.5s;   
 }
-#section_news .news_slide .newsbox img{
+#section_news .news_area .news_slide .newsbox img{
     width: 250px;
     height: 250px;
     margin: auto;
@@ -1110,45 +1114,45 @@ main{
     border-radius: 10px;
 }
 
-#section_news .news_slide .newsbox .news_textbox{
+#section_news .news_area .news_slide .newsbox .news_textbox{
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
-#section_news .news_slide .newsbox .news_textbox .news_type{
+#section_news .news_area .news_slide .newsbox .news_textbox .news_type{
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 700;
     color: #f62837;
 }
-#section_news .news_slide .newsbox .news_textbox .news_title{
+#section_news .news_area .news_slide .newsbox .news_textbox .news_title{
     font-size: 1.4rem;
     line-height: 2rem;
     font-weight: 500;
 }
-#section_news .news_slide .newsbox .news_textbox .news_date{
+#section_news .news_area .news_slide .newsbox .news_textbox .news_date{
     font-size: 1.2rem;
     line-height: 2rem;
     font-weight: 500;
     color: #444;
 }
 
-#section_news .news_slide .slick-dots{
+#section_news .news_area .news_slide .slick-dots{
     position: absolute;
-    bottom: 5%;
+    bottom : -27%;
 }
 
-#section_news .news_slide .slick-dots li{
+#section_news .news_area .news_slide .slick-dots li{
     width: 6rem;
     height: 6rem;
 }
-#section_news .news_slide .slick-dots li button{
+#section_news .news_area .news_slide .slick-dots li button{
     width: 6rem;
     height: 6rem;
 }
 
-#section_news .news_slide .slick-dots li button:before{
+#section_news .news_area .news_slide .slick-dots li button:before{
     font-size: 6rem;
     line-height: 6rem;
     width: 6rem;
@@ -1156,34 +1160,33 @@ main{
     opacity: 1;
     color: #fff;
 }
-#section_news .news_slide .slick-dots li.slick-active button:before{
+#section_news .news_area .news_slide .slick-dots li.slick-active button:before{
     opacity: 1;
     color: #f62837;
 }
 @media (max-width:1400px){
-    #section_news  h2{
+    #section_news h2{
         font-size: 3.5rem;
     }
 }
 @media (max-width:993px){
-    #section_news  h2{
+    #section_news h2{
         font-size: 2.8rem;
     }
     #section_news::before{
-        margin-top: 80px;
         border: 5px solid #f62837;
     }
-    #section_news .news_slide .slick-dots li{
+    #section_news .news_area .news_slide .slick-dots li{
         width: 4rem;
         height: 4rem;
     }
-    #section_news .news_slide .slick-dots li button{
+    #section_news .news_area .news_slide .slick-dots li button{
         width: 4rem;
         height: 4rem;
         padding: 5px;
     }
     
-    #section_news .news_slide .slick-dots li button:before{
+    #section_news .news_area .news_slide .slick-dots li button:before{
         font-size: 4rem;
         line-height: 4rem;
         width: 4rem;
