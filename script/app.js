@@ -82,13 +82,13 @@ $(document).ready(function() {
   
   //보도자료/소식 슬라이드
   $('.news_slide').slick({
-    slide: 'li',
+    slide: '.newsbox',
     slidesToShow : 5,
     slidesToScroll : 1,
     dots: true,
     infinite: true,
     autoplay : true,
-    autospeed: 1000,
+    autospeed: 3000,
     responsive: [
       {
         breakpoint: 1400, 
