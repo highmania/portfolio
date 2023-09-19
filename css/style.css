@@ -735,12 +735,17 @@ main{
     width: 50%;
     padding: 2%;
     font-size: 1.8rem;
-    line-height: 30px;
+    line-height: 3rem;
     font-weight: 500;
 }
-#section_global .global_map .nations_spot .spot .spotWrap .spot_text span{
+#section_global .global_map .nations_spot .spot .spotWrap .spot_text .bold{
+    font-size: 3rem;
+    font-weight: 700;
+}
+#section_global .global_map .nations_spot .spot .spotWrap .spot_text .red{
     font-size: 3rem;
     color: #f62837;
+    font-weight: 700;
 }
 
 @media (max-width:1200px){
@@ -821,8 +826,9 @@ main{
         font-size: 1.5rem; 
         line-height: 2.5rem; 
     }
-    #section_global .global_map .nations_spot .spot .spotWrap .spot_text span{
-        font-size: 1.6rem;
+    #section_global .global_map .nations_spot .spot .spotWrap .spot_text .bold,
+    #section_global .global_map .nations_spot .spot .spotWrap .spot_text .red{
+        font-size: 2rem;
     }
 }
 /* 대표제품 소개 */
