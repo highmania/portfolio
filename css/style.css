@@ -761,7 +761,7 @@ main{
         height: 600px;
     }
     #section_global .global_map{
-        background-size: 70%;
+        background-size: 90%;
         height: 350px;
     }
     #section_global .global_text>p{
@@ -807,7 +807,7 @@ main{
         width: 100%;
         text-align: left;
         position: absolute;
-        top : 25%;
+        top : 20%;
         left: 50%;
         transform: translate( -50%, 0%);
     }
@@ -817,8 +817,7 @@ main{
         gap : 0px;
     }
     #section_global .global_map .nations_spot .spot .spotWrap img{
-        width: 50%;
-        height: 50%;
+        width: 65%;
     }
     #section_global .global_map .nations_spot .spot .spotWrap .spot_text{
         width: 100%;
