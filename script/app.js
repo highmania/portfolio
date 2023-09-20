@@ -106,13 +106,15 @@ $(document).ready(function() {
   });
   // Top버튼
   $(window).scroll(function() { 
-      if ($(this).scrollTop() > 250) { //250 넘으면 버튼활성화 
-          $('#toTop').fadeIn(); 
-          $('#toTop').css('left', $('#sidebar').offset());
-      } else { 
-          $('#toTop').fadeOut(); 
-      } 
-  }); 
+    if ($(this).scrollTop() > 250) { //250 넘으면 버튼활성화 
+        $('#toTop').fadeIn(); 
+        if ($('#sidebar').length) {
+            $('#toTop').css('left', $('#sidebar').offset().left);
+        }
+    } else { 
+        $('#toTop').fadeOut(); 
+    } 
+  });
   // Top 버튼 클릭시 
   $("#toTop").click(function() { 
       $('html, body').animate({ scrollTop : 0 // 0 까지 animation 이동 
