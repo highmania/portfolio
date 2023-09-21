@@ -17,6 +17,7 @@
     <script src="./script/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=2ee46ed28e383b4ce6832b2ba1cd2879" type="text/javascript"></script>
 </head>
 
 <body>
@@ -220,7 +221,6 @@
         </div>
     </footer>
     <!-- //footer -->
-    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2ee46ed28e383b4ce6832b2ba1cd2879" type="text/javascript"></script>
     <script>
         // first map
         var mapContainer = document.getElementById('map'),
@@ -242,7 +242,7 @@
         var mapContainer2 = document.getElementById('map2'),
             mapOption2 = { 
                 center: new kakao.maps.LatLng( 35.48329361708156, 128.72401521959128), 
-                level: 3
+                level: 4
             };
         var map2 = new kakao.maps.Map(mapContainer2, mapOption2);
 
@@ -258,17 +258,17 @@
         var mapContainer3 = document.getElementById('map3'),
             mapOption3= { 
                 center: new kakao.maps.LatLng(33.54080649701277, 126.81386532144732), 
-                level: 3
+                level: 4
             };
         var map3= new kakao.maps.Map(mapContainer3,mapOption3);
 
         var markerPosition3= new kakao.maps.LatLng(33.54080649701277, 126.81386532144732);
 
-        var marker3= newkakako.marks.Marker({
-            position :markerPosition3
+        var marker3 = new kakao.maps.Marker({
+            position: markerPosition3
         });
 
-        marker.setMap(map3);
+        marker3.setMap(map3);
     </script>  
 </body>
 
